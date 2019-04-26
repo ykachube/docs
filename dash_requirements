@@ -1,0 +1,16 @@
+There is a dashboard application. It's stored in  git. There are setup instructions. It should be a single app for all projects 
+on account. Dashboard should display following info about all test envs and production:
+
+    installed release / planned release / branch name / scope name - what is installed on this env
+    build installation date
+    last dashboard updated date - single for whole dashboard
+    git commit/tag with link to bitbucket/...
+    integration points - e.g. that CMS points to PPR CMS, DataSource points to QA or DEV Database
+    status of env - started/shutted down/in progress/ deploy failed (green, gray, green flashing, red)
+        link to job for starting env
+    status of integration points - available/not available
+    links to different applications of this env: admin, merch panel, search admin, storefronts, etc
+    list of new Jira items installed on env compared to the master (not MVP)
+
+There should be also a button for booking/reserving the env which will assign the env to some people/team and show other that
+it shouldn't be rebuilt.
